@@ -18,13 +18,13 @@
 
 ## Lấy thông tin `api_key`
 
-[Liên hệ với eTop](https://api-eship-dev.sobanhang.com/doc/shop/setup-account.html#lien-he-voi-chung-toi) và gửi thông tin tài khoản của bạn để lấy `api_key`.
+Liên hệ với eShip và gửi thông tin tài khoản của bạn để lấy `api_key`.
 
 Để kiểm tra `api_key` là đúng, bạn có thể gửi request như sau:
 
 ```sh
 export API_KEY=<api_key>
-curl https://api.d.etop.vn/v1/shop.Misc/CurrentAccount \
+curl https://api-eship-dev.sobanhang.com/v1/shop.Misc/CurrentAccount \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $API_KEY" \
     -d '{}'

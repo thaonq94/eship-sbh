@@ -1,7 +1,7 @@
 # 📋 Sử dụng
 
 {% hint style="info" %}
-Trước khi bắt đầu, hãy kiểm tra bạn đã sử dụng đúng môi trường [Development](https://sandbox.apihub.vn/) hoặc [Production](https://api.apihub.vn/) và tạo một tài khoản theo hướng dẫn ở [đây](https://api-eship-dev.sobanhang.com/doc/shop/setup-account.html).
+Trước khi bắt đầu, hãy kiểm tra bạn đã sử dụng đúng môi trường [Development](https://api-eship-dev.sobanhang.com/) hoặc [Production](https://api-eship.sobanhang.com/) và tạo một tài khoản theo hướng dẫn ở [đây](tao-tai-khoan.md).
 {% endhint %}
 
 ## Cấu hình
@@ -10,7 +10,7 @@ Sử dụng `api_key` được cung cấp và cấu hình như sau:
 
 ```shell
 export API_KEY=<api_key>
-export API_HOST=https://api.d.etop.vn
+export API_HOST=https://api-eship-dev.sobanhang.com
 ```
 
 > Hướng dẫn sử dụng các lệnh `export` và `curl` được cung cấp sẵn khi chạy bằng terminal trên hệ điều hành Linux hoặc Mac. Trong trường hợp bạn sử dụng môi trường khác, vui lòng thay thế bằng các thao tác tương đương.
@@ -22,7 +22,7 @@ export API_HOST=https://api.d.etop.vn
 Một lời gọi API tiêu biểu như sau:
 
 ```sh
-curl https://api.d.etop.vn/v1/shop.Misc/CurrentAccount \
+curl https://api-eship-dev.sobanhang.com/v1/shop.Misc/CurrentAccount \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $API_KEY" \
   -d '{}'
